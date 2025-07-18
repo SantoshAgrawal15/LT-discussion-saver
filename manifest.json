@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Discussion Saver",
+  "version": "1.0",
+  "description": "Save and organize LeetCode discussion posts you find helpful",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "debugger"
+  ],
+  "host_permissions": [
+    "*://leetcode.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LeetCode Discussion Saver"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/problems/*/discuss/*", "*://leetcode.com/discuss/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

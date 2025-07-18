@@ -1,0 +1,67 @@
+/* Styles for LeetCode Discussion Saver */
+
+#leetcode-saver-btn {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 999999 !important;
+  background: linear-gradient(135deg, #ff6b35, #f7931e) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3) !important;
+  transition: all 0.2s ease !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  backdrop-filter: blur(10px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+#leetcode-saver-btn:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+}
+
+#leetcode-saver-btn:active {
+  transform: translateY(0) !important;
+}
+
+/* Notification styles */
+.leetcode-saver-notification {
+  position: fixed !important;
+  top: 80px !important;
+  right: 20px !important;
+  z-index: 10001 !important;
+  padding: 12px 20px !important;
+  border-radius: 6px !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 13px !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  transition: all 0.3s ease !important;
+  transform: translateX(400px) !important;
+}
+
+.leetcode-saver-notification.success {
+  background: #28a745 !important;
+}
+
+.leetcode-saver-notification.error {
+  background: #dc3545 !important;
+}
+
+.leetcode-saver-notification.info {
+  background: #17a2b8 !important;
+}
+
+.leetcode-saver-notification.show {
+  transform: translateX(0) !important;
+}
